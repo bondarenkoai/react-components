@@ -1,11 +1,12 @@
 {
-    "cSpell.language": "en,uk",
-    "cSpell.ignoreWords": [
-        "goit",
-        "папка",
-        "пропсів",
-        "результуючому",
-        "рендеряться",
-        "репозиторія"
-    ]
+  "cSpell.language": "en,uk",
+  "cSpell.ignoreWords": [
+    "goit",
+    "папка",
+    "пропсів",
+    "результуючому",
+    "рендеряться",
+    "репозиторія"
+  ],
+  "cSpell.words": ["Parens"]
 }
