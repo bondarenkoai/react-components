@@ -1,7 +1,7 @@
 import { Description } from './Description/Description';
+import { Stats } from './Stats/Stats';
 import css from './Profile.module.css';
 import users from '../../data/users.json';
-import { Stats } from './Stats/Stats';
 
 export const Profile = () => {
     return (
