@@ -14,7 +14,7 @@
 .profile {
     box-sizing: border-box;
     width: 300px;
-    height: 400px;
+    height: 420px;
     margin-top: 32px;
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
@@ -33,4 +33,22 @@
 .profile:hover {
     cursor: pointer;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profilePosition {
+    min-width: 1200px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+    .profilePosition {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
 }
