@@ -1,26 +1,29 @@
 import css from './StatisticsTitle.module.css';
-import statist from '../../../data/statistics.json';
+import getRandomTitle from '../getRandomTitle';
 
-// Функція для генерації випадкового кольору
 const getRandomColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
-const statistics = statist[1];
+export const Stats = ({ data }) => {
+    const title = getRandomTitle();
 
-export const Stats = () => {
     return (
-        <div className={css.stats}>
-            {statistics.map(({ id, label, percentage }) => (
-                <ul
-                    className={css.statsList}
-                    key={id}
-                    style={{ backgroundColor: getRandomColor() }}
-                >
-                    <li className={css.statsItem} id={id}>
-                        <span className={css.label}>{label}</span>
-                        <span className={css.percentage}>{percentage}</span>
-                    </li>
+        <div className={css.statsContainer}>
+            {title && <h2 className="title">{title}</h2>}
+            <div className={css.stats}>
+                <ul className={css.statsList}>
+                    {data.map(({ id, label, percentage }, index) => (
+                        <li
+                            className={css.statsItem}
+                            id={id}
+                            key={index}
+                            style={{ backgroundColor: getRandomColor(), width: `${percentage}%` }}
+                        >
+                            <span className={css.label}>{label}</span>
+                            <span className={css.percentage}>{percentage}</span>
+                        </li>
+                    ))}
                 </ul>
-            ))}
+            </div>
         </div>
     );
 };

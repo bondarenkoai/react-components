@@ -1,7 +1,9 @@
 .statistics {
     box-sizing: border-box;
     width: 800px;
-    height: 120px;
+    height: 100%;
+    padding: 0 10px;
+    margin: 30px 0;
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
     box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;

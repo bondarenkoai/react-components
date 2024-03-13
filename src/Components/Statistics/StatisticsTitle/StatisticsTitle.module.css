@@ -1,6 +1,12 @@
+.statsContainer {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 15px 15px 30px #bebebe;
+    border-radius: 17px;
+}
+
 .stats {
     width: 100%;
-    margin-top: 30px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -14,25 +20,32 @@
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    padding: 0;
+    padding: 0 10px;
 }
 
 .label {
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
-    color: #6d6d6d;
+    color: #000000;
 }
 
 .statsItem {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 17px;
+    cursor: pointer;
 }
 
-.quantity {
-    margin: 10px;
+.statsItem:hover {
+    scale: 1.05;
+    transition: all 0.5s;
+}
+
+.percentage {
+    margin: 10px 0;
     cursor: pointer;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
