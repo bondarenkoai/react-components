@@ -1,7 +1,18 @@
 import css from './FriendsCard.module.css';
+import friends from '../../../data/friends.json';
 
 export const FriendsCard = ({ data }) => {
-    return <div>HEllo</div>;
+    return (
+        <div className={css.card}>
+            {friends.map(({ avatar, name, isOnline, id }) => (
+                <li className={css.item} id={id} key={id}>
+                    <span className={css.status}></span>
+                    <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+                    <p className={css.name}>{name}</p>
+                </li>
+            ))}
+        </div>
+    );
 };
 
 // {
@@ -11,8 +22,8 @@ export const FriendsCard = ({ data }) => {
 //         "id": 1812
 //     },
 
-{
-    /* <div className={css.statsContainer}>
+// {
+/* <div className={css.statsContainer}>
             {title && <h2 className="title">{title}</h2>}
             <div className={css.stats}>
                 <ul className={css.statsList}>
@@ -30,4 +41,4 @@ export const FriendsCard = ({ data }) => {
                 </ul>
             </div>
         </div> */
-}
+// }
