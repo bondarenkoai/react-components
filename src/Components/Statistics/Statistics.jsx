@@ -1,6 +1,6 @@
 import css from './Statistics.module.css';
 import statistics from '../../data/statistics.json';
-import { Stats } from './StatisticsTitle/StatisticsTitle';
+import { Stats } from './StatisticsCard/StatisticsCard';
 
 export const Statistics = () => {
     return (

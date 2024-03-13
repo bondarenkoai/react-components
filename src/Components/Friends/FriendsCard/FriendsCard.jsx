@@ -1,13 +1,18 @@
-import css from './StatisticsTitle.module.css';
-import getRandomTitle from '../getRandomTitle';
+import css from './FriendsCard.module.css';
 
-const getRandomColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+export const FriendsCard = ({ data }) => {
+    return <div>HEllo</div>;
+};
 
-export const Stats = ({ data }) => {
-    const title = getRandomTitle();
+// {
+//         "avatar": "https://img.freepik.com/free-psd/3d-rendering-boy-avatar-emoji_23-2150603408.jpg",
+//         "name": "Alex Johnson",
+//         "isOnline": true,
+//         "id": 1812
+//     },
 
-    return (
-        <div className={css.statsContainer}>
+{
+    /* <div className={css.statsContainer}>
             {title && <h2 className="title">{title}</h2>}
             <div className={css.stats}>
                 <ul className={css.statsList}>
@@ -24,6 +29,5 @@ export const Stats = ({ data }) => {
                     ))}
                 </ul>
             </div>
-        </div>
-    );
-};
+        </div> */
+}
