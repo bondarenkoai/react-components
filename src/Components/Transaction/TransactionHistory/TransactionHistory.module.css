@@ -3,52 +3,48 @@
     padding: 10px;
     box-shadow: 15px 15px 30px #bebebe;
     border-radius: 17px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.item {
+.caption {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+    padding: 5px;
+    color: #8c8c8c;
+    font-weight: 700;
+}
+
+thead {
     width: 100%;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    border-radius: 17px;
+}
+
+th {
+    padding: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+tbody {
+    width: 100%;
     cursor: pointer;
 }
 
-.item:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
+tr {
+    width: 100%;
 }
 
-.avatar {
-    margin: 10px 30px;
-    width: 60px;
-    border-radius: 50%;
-}
-
-.name {
-    margin: 10px 0;
+td {
+    padding: 10px;
     font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    color: #8c8c8c;
+    border-bottom: 1px solid #bebebe;
 }
 
-.status {
-    width: 10px;
-    height: 10px;
-    background-color: green;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.statusOn {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    margin-right: 5px;
+tr:hover {
+    background-color: #f0f0f0;
 }

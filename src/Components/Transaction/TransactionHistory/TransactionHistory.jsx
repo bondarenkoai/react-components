@@ -5,6 +5,7 @@ export const TransactionHistory = ({ items }) => {
 
     return (
         <table className={css.table}>
+            <caption className={css.caption}>A summary of all transaction</caption>
             <thead>
                 <tr>
                     <th>Type</th>
@@ -14,16 +15,13 @@ export const TransactionHistory = ({ items }) => {
             </thead>
 
             <tbody>
-                <tr>
-                    <td>Invoice</td>
-                    <td>125</td>
-                    <td>USD</td>
-                </tr>
-                <tr>
-                    <td>Withdrawal</td>
-                    <td>85</td>
-                    <td>USD</td>
-                </tr>
+                {items.map(({ id, type, amount, currency }) => (
+                    <tr>
+                        <td>{type}</td>
+                        <td>{amount}</td>
+                        <td>{currency}</td>
+                    </tr>
+                ))}
             </tbody>
         </table>
     );
