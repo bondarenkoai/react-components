@@ -78,43 +78,38 @@
         "currency": "KRW"
     },
     {
-        "id": "9c5c25fb-1a95-4b2f-8d1f-4c4426d677cc",
+        "id": "9c5c25fb-1a95-4b2f-8d1f-4c4426d677vc",
         "type": "invoice",
         "amount": "14.79",
         "currency": "HKD"
     },
     {
-        "id": "9648a350-8469-42d5-8bf3-18090de5fe67",
+        "id": "9648a350-8469-42d5-8bf3-18090de5fc67",
         "type": "withdrawal",
         "amount": "322.32",
         "currency": "NPR"
     },
     {
-        "id": "4eaab41b-b967-40ac-82ed-85fc66f646f1",
+        "id": "4eaab41b-b967-40ac-82ed-85fc66f446f1",
         "type": "deposit",
         "amount": "103.10",
         "currency": "THB"
     },
+
     {
-        "id": "252c7be4-8b06-4fa7-8d42-61fb835b70d5",
-        "type": "payment",
-        "amount": "388.98",
-        "currency": "RUB"
-    },
-    {
-        "id": "6013bad0-750c-4691-8bc2-d8f2b43969c4",
+        "id": "6013bad0-750c-4691-8bc2-d8f2b43965c4",
         "type": "withdrawal",
         "amount": "352.52",
         "currency": "PHP"
     },
     {
-        "id": "ed0263e8-59a5-4bf1-87e0-2bb88e53dc34",
+        "id": "ed0263e8-59a5-4bf1-87e0-2bb85e53dc34",
         "type": "payment",
         "amount": "907.00",
         "currency": "HUF"
     },
     {
-        "id": "63ca02f9-d637-46b5-9237-f3b24425e029",
+        "id": "63ca02f9-d637-46b5-9237-f3b24435e029",
         "type": "withdrawal",
         "amount": "862.44",
         "currency": "TRY"

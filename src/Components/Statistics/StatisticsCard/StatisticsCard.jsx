@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './StatisticsCard.module.css';
 import getRandomTitle from '../getRandomTitle';
 
@@ -26,4 +27,14 @@ export const Stats = ({ data }) => {
             </div>
         </div>
     );
+};
+
+Stats.propTypes = {
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
+        }).isRequired
+    ).isRequired,
 };

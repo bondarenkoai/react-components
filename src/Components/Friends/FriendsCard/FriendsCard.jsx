@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './FriendsCard.module.css';
 
 export const FriendsCard = ({ friends }) => {
@@ -12,4 +13,15 @@ export const FriendsCard = ({ friends }) => {
             ))}
         </div>
     );
+};
+
+FriendsCard.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            avatar: PropTypes.string.isRequired,
+            isOnline: PropTypes.bool.isRequired,
+            name: PropTypes.string.isRequired,
+            id: PropTypes.number.isRequired,
+        })
+    ),
 };
