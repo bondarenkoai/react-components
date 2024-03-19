@@ -23,11 +23,11 @@ Description of the `<Profile>` component:
 
 The component should accept several props with user information:
 
--   `username` - user's name
--   `tag` - tag in the social network without @
--   `location` - city and country
--   `avatar` - link to the image
--   `stats` - object with activity informatio
+`username` - user's name  
+`tag` - tag in the social network without @  
+`location` - city and country  
+`avatar` - link to the image  
+`stats` - object with activity informatio
 
 The component should create a DOM element with the following structure.
 
@@ -81,8 +81,8 @@ expenses, etc.
 The component should accept two props title and stats, which specify the title and the statistics
 object.
 
--   `title` - optional, and if it is not passed, the `<h2>` header markup should not be rendered.
--   `stats` - an array of objects containing information about the statistics item.
+`title` - optional, and if it is not passed, the `<h2>` header markup should not be rendered.  
+`stats` - an array of objects containing information about the statistics item.
 
 It can have any number of elements. Background color of the statistics item in the design can be
 skipped or a function can be created to generate a random color. The component should create a DOM
@@ -138,10 +138,10 @@ The component should create DOM with the following structure:
 
 Description of the `<FriendListItem>` component: The component should accept several props:
 
--   `avatar` - link to the avatar
--   `name` - friend's name
--   `isOnline` - a boolean indicating the friend's
--   `status` - online or not
+`avatar` - link to the avatar  
+`name` - friend's name  
+`isOnline` - a boolean indicating the friend's  
+`status` - online or not
 
 Depending on the isOnline prop, the background color of span.status should change. This can be done
 using different CSS classes or Styled Components.
@@ -170,10 +170,10 @@ bank.
 The data for the list is available in JSON format in the transactions.json file. It is an array of
 objects, where each object describes one transaction with the following properties:
 
--   `id` - unique transaction identifier
--   `type` - transaction type
--   `amount` - transaction amount
--   `currency` - currency type
+`id` - unique transaction identifier  
+`type` - transaction type  
+`amount` - transaction amount  
+`currency` - currency type
 
 Description of the `<TransactionHistory>` component:
 
@@ -214,7 +214,7 @@ import transactions from 'path/to/transactions.json';
 <TransactionHistory items={transactions} />;
 ```
 
--   `Branches:`
+`Branches:`
 
 > Total: 14 hrs 18 mins => main
 
