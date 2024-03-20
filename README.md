@@ -220,5 +220,8 @@ import transactions from 'path/to/transactions.json';
 
 `Languages:`
 
-> JavaScript - 8h 58m (62.73%) CSS - 2h 35m (18.13%) JSON - 2h 6m (14.74%) Markdown - 31m (3.71%)
+> JavaScript - 8h 58m (62.73%)  
+> CSS - 2h 35m (18.13%)  
+> JSON - 2h 6m (14.74%)  
+> Markdown - 31m (3.71%)  
 > Git Config - 3m (0.42%) Other - 1m (0.19%)

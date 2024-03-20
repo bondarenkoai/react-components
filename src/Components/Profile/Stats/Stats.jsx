@@ -1,21 +1,17 @@
 import css from './Stats.module.css';
 
-export const Stats = ({ stats: { followers, views, likes } }) => {
+export const Stats = ({ stats }) => {
     return (
         <div className={css.stats}>
             <ul className={css.statsList}>
-                <li className={css.statsItem}>
-                    <span className={css.label}>Followers</span>
-                    <span className={css.quantity}>{followers}</span>
-                </li>
-                <li className={css.statsItem}>
-                    <span className={css.label}>Views</span>
-                    <span className={css.quantity}>{views}</span>
-                </li>
-                <li className={css.statsItem}>
-                    <span className={css.label}>Likes</span>
-                    <span className={css.quantity}>{likes}</span>
-                </li>
+                {Object.entries(stats).map(([key, value]) => (
+                    <li className={css.statsItem} key={key}>
+                        <span className={css.label}>
+                            {key.charAt(0).toUpperCase() + key.slice(1)}
+                        </span>
+                        <span className={css.quantity}>{value}</span>
+                    </li>
+                ))}
             </ul>
         </div>
     );
